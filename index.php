@@ -1,4 +1,11 @@
-<?php include 'header.php'; ?>
+<?php
+session_start();
+if (isset($_SESSION['unique_id'])) {
+    header("location: users.php");
+}
+
+include 'header.php';
+?>
 
 <body>
     <div class="wrapper">

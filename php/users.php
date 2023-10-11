@@ -4,6 +4,7 @@ session_start();
 
 include 'config.php';
 
+$outgoing_id = $_SESSION['unique_id'];
 $conn = new Connection();
 
 $sql = mysqli_query($conn, "SELECT * FROM users");
